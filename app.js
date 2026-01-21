@@ -125,7 +125,7 @@ class SavingsCalculator {
                 <span class="category-name">${cat.name}</span>
                 <input type="number" class="category-input" value="${cat.percentage}" min="0" max="100" data-id="${cat.id}">
                 <span class="category-percent">%</span>
-                <span class="category-amount" id="amount-${cat.id}">$0.00</span>
+                <span class="category-amount" id="amount-${cat.id}">Ksh. 0.00</span>
                 <button class="category-delete" data-id="${cat.id}">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M12 4L4 12M4 4L12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
                 </button>
@@ -328,7 +328,7 @@ class SavingsCalculator {
     }
 
     formatCurrency(amount) {
-        return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(amount);
+        return 'Ksh. ' + new Intl.NumberFormat('en-KE', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(amount);
     }
 
     getRandomColor() {

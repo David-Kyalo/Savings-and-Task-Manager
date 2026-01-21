@@ -70,14 +70,14 @@
                         <p class="card-description">Enter your total income or savings amount</p>
                     </div>
                     <div class="input-group">
-                        <span class="currency-symbol">$</span>
+                        <span class="currency-symbol">Ksh.</span>
                         <input type="number" id="principalAmount" placeholder="0.00" min="0" step="0.01">
                     </div>
                     <div class="quick-amounts">
-                        <button class="quick-btn" data-amount="1000">$1,000</button>
-                        <button class="quick-btn" data-amount="5000">$5,000</button>
-                        <button class="quick-btn" data-amount="10000">$10,000</button>
-                        <button class="quick-btn" data-amount="50000">$50,000</button>
+                        <button class="quick-btn" data-amount="1000">Ksh. 1,000</button>
+                        <button class="quick-btn" data-amount="5000">Ksh. 5,000</button>
+                        <button class="quick-btn" data-amount="10000">Ksh. 10,000</button>
+                        <button class="quick-btn" data-amount="50000">Ksh. 50,000</button>
                     </div>
                 </div>
 
@@ -137,7 +137,7 @@
                         </div>
                         <div class="remaining-section">
                             <div class="remaining-label">Remaining (Savings)</div>
-                            <div id="remainingAmount" class="remaining-amount">$0.00</div>
+                            <div id="remainingAmount" class="remaining-amount">Ksh. 0.00</div>
                             <div id="remainingPercent" class="remaining-percent">100%</div>
                         </div>
                     </div>
@@ -255,7 +255,55 @@
         </footer>
     </div>
 
+    <!-- Chatbot Widget -->
+    <button id="chatbotToggle" class="chatbot-toggle" aria-label="Open chat">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M8 10H16M8 14H12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+    </button>
+
+    <div id="chatWindow" class="chat-window">
+        <div class="chat-header">
+            <div class="chat-header-content">
+                <div class="chat-avatar">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                        <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="chat-title">Smart Save Assistant</h3>
+                    <p class="chat-status">Always here to help</p>
+                </div>
+            </div>
+            <button id="chatClose" class="chat-close" aria-label="Close chat">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="chatMessages" class="chat-messages">
+            <!-- Messages will be added here dynamically -->
+        </div>
+
+        <div class="chat-input-container">
+            <input type="text" id="chatInput" class="chat-input" placeholder="Ask about savings or tasks..."
+                autocomplete="off">
+            <button id="chatSend" class="chat-send-btn" aria-label="Send message">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 8L11 13" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
     <script src="app.js"></script>
+    <script src="chatbot.js"></script>
 </body>
 
 </html>
