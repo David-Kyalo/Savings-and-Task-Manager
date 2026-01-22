@@ -1,15 +1,23 @@
 # SmartSave - Savings Calculator
 
-A professional, elegant savings calculator web application that helps you visualize your income allocation and track spending patterns over time.
+A professional, elegant savings calculator web application that helps you visualize your income allocation and track spending patterns over time, now featuring an intelligent Smart Save Assistant.
 
-![SmartSave](https://img.shields.io/badge/Version-1.0.0-E8A87C) ![License](https://img.shields.io/badge/License-MIT-green)
+![SmartSave](https://img.shields.io/badge/Version-1.1.0-E8A87C) ![License](https://img.shields.io/badge/License-MIT-green)
 
 ## ✨ Features
 
-### 💰 Income Allocation
-- Enter principal amount manually or use quick-select buttons
+### 💰 Income Allocation & Savings
+- **Kenyan Shillings (Ksh.) Support**: Optimized for local currency tracking
+- Enter principal amount manually or use quick-select buttons (Ksh. 1,000 - Ksh. 50,000)
 - Set custom percentages for each spending category
 - Real-time calculation updates as you type
+
+### 🤖 Smart Save Assistant (FAQ Chatbot)
+- **Intelligent Q&A**: Answers 40+ frequently asked questions about savings and task management
+- **Keyword Matching**: Smart recognition of user queries to provide accurate financial advice
+- **Real-time Help**: Instant answers on budgeting, 50/30/20 rule, debt management, and productivity
+- **Human Support**: Quick access to customer care via dinfo@smartsave.com
+- **Persistent Chat**: Remembers your conversation history
 
 ### 📂 Category Management
 - **Default Categories**: Rent/Housing, Food & Groceries, Transportation, Entertainment, Utilities
@@ -65,6 +73,7 @@ Savings/
 ├── index.html      # Main HTML structure
 ├── styles.css      # CSS styling and design system
 ├── app.js          # Application logic and Chart.js integration
+├── chatbot.js      # Smart Save Assistant logic and FAQ database
 └── README.md       # Project documentation
 ```
 
@@ -72,18 +81,18 @@ Savings/
 
 - **HTML5** - Semantic markup
 - **CSS3** - Custom properties, Flexbox, Grid, animations
-- **JavaScript (ES6+)** - Class-based architecture
+- **JavaScript (ES6+)** - Class-based architecture and keyword matching
 - **Chart.js** - Data visualization
 - **Google Fonts** - Playfair Display & Inter
 
 ## 📱 Usage
 
-1. **Enter Principal Amount**: Type your income/savings or click a quick-select button
+1. **Enter Principal Amount**: Type your income/savings in Ksh. or click a quick-select button
 2. **Adjust Categories**: Modify percentages for each category
-3. **Add Custom Categories**: Use the "Add Category" section for personalized tracking
-4. **View Breakdown**: Scroll to see the allocation chart and summary
-5. **Save Snapshots**: Click "Save Current Snapshot" to track trends over time
-6. **Analyze Trends**: View the Trends section to compare spending patterns
+3. **Ask the Assistant**: Use the floating chat button in the bottom-right for help or financial tips
+4. **Add Custom Categories**: Use the "Add Category" section for personalized tracking
+5. **View Breakdown**: Scroll to see the allocation chart and summary
+6. **Save Snapshots**: Click "Save Current Snapshot" to track trends over time
 
 ## 🔧 Customization
 
@@ -113,6 +122,10 @@ MIT License - feel free to use and modify for your projects.
 ## 👤 Author
 
 **David Kyalo** - © 2026
+
+## 📧 Support
+
+For inquiries or feedback, please contact us at **dinfo@smartsave.com**
 
 ---
 
